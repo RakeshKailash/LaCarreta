@@ -1,0 +1,14 @@
+/* Helpers */
+.no-margin {
+	margin: 0 !important;
+}
+
+.bolded
+, .bolded > * {
+	font-weight: bold;	
+}
+
+.c_black {
+	color: #444;
+}
+/* Fim dos Helpers */
