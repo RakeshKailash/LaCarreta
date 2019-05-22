@@ -23,7 +23,7 @@
 					<a id="logo" class="scrollto" href="#banner_home"><img src="<?=RAIZ?>img/logo_claro.png"></img></a>
 				</div>
 				<div class="col m10 s10" style="position: relative">
-					<a href="#" id="btn_menu_mobile" class="hide-on-large-only">
+					<a href="javascript:void(0)" id="btn_menu_mobile" class="hide-on-large-only">
 						<span class="material-icons icone_menu">menu</span>
 						<span class="material-icons icone_fechar">close</span>
 					</a>

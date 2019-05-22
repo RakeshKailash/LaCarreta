@@ -122,9 +122,9 @@ body {
 
 #cabecalho #menu_desk > .item_menu_desk {
 	color: #efc30a;
-    font-family: "League Gothic";
-    font-size: 18pt;
-    display: inline-block;
+	font-family: "League Gothic";
+	font-size: 18pt;
+	display: inline-block;
 }
 
 #cabecalho #menu_desk > .item_menu_desk > a {
@@ -142,8 +142,8 @@ body {
 }
 
 #cabecalho #menu_desk > .item_menu_desk:hover > a {
-    color: #fff;
-    background: #efc30a;
+	color: #fff;
+	background: #efc30a;
 }
 
 /* Slider da Home */
@@ -154,8 +154,8 @@ body {
 	overflow: hidden;
 	background-image: url(../img/banner_home_2.png);
 	background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 /* Fim do Slider da Home */
 
@@ -173,25 +173,25 @@ body {
 .col_mapa {
 	padding-left: 20px !important;
 	position: absolute;
-    top: 50%;
-    right: 0 !important;
-    transform: translateY(-50%);
+	top: 50%;
+	right: 0 !important;
+	transform: translateY(-50%);
 }
 
 .section_header {
 	width: 100%;
-    min-height: 80px;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 10px;
-    position: relative;
+	min-height: 80px;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 10px;
+	position: relative;
 }
 
 .section_header > .section_title {
-    font-family: "League Gothic";
-    text-transform: uppercase;
+	font-family: "League Gothic";
+	text-transform: uppercase;
 	font-size: 30pt;
-    letter-spacing: 1px;
+	letter-spacing: 1px;
 	color: #efc30a;
 	display: inline-block;
 	vertical-align: middle;
@@ -210,17 +210,17 @@ body {
 
 .section_title_img {
 	position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 100px;
+	display: inline-block;
+	width: 100%;
+	height: 100px;
 }
 
 .section_title_img > img {
 	position: absolute;
-    top: 50%;
-    left: 50%;
+	top: 50%;
+	left: 50%;
 	height: 70px;
-    transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 
 #secao_cardapio {
@@ -235,11 +235,11 @@ body {
 
 span.line {
 	height: 3px;
-    width: 100%;
-    background-color: #efc30a;
-    position: absolute;
-    bottom: 15px;
-    border-radius: 0 0 10px 10px;
+	width: 100%;
+	background-color: #efc30a;
+	position: absolute;
+	bottom: 15px;
+	border-radius: 0 0 10px 10px;
 }
 
 .row_lanches {
@@ -249,65 +249,65 @@ span.line {
 
 #secao_cardapio::after {
 	width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    background: linear-gradient(to top, rgba(0,0,0,1), 10%,rgba(0,0,0,0),25%, rgba(0,0,0,0));
-    z-index: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	background: linear-gradient(to top, rgba(0,0,0,1), 10%,rgba(0,0,0,0),25%, rgba(0,0,0,0));
+	z-index: 0;
 }
 
 .row_header {
 	height: 50px;
-    width: 100%;
+	width: 100%;
 }
 
 .row_title {
 	font-family: League Gothic;
-    color: #efc30a;
-    text-transform: uppercase;
-    font-size: 27pt;
-    text-align: left;
-    padding-left: 13px;
-    position: relative;
+	color: #efc30a;
+	text-transform: uppercase;
+	font-size: 27pt;
+	text-align: left;
+	padding-left: 13px;
+	position: relative;
 }
 
 .row_title::after {
-    content: "";
+	content: "";
 	height: 28px;
-    width: 8px;
-    position: absolute;
-    left: 0;
-    top: 3px;
-    background-color: #efc30a;
-    border-radius: 6px 14px;
+	width: 8px;
+	position: absolute;
+	left: 0;
+	top: 3px;
+	background-color: #efc30a;
+	border-radius: 6px 14px;
 }
 
 .box_lanche {
-    height: 300px;
-    position: relative;
-    text-align: center;
-    padding: 0 !important;
-    /*border-radius: 0 0 10px 10px;*/
-    display: inline-block;
-    margin-bottom: 20px;
-    cursor: pointer;
-    overflow: hidden;
+	height: 300px;
+	position: relative;
+	text-align: center;
+	padding: 0 !important;
+	/*border-radius: 0 0 10px 10px;*/
+	display: inline-block;
+	margin-bottom: 20px;
+	cursor: pointer;
+	overflow: hidden;
 }
 
 .box_lanche::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to top, #EFC30A, 15%, #EFC30A,transparent);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    /*border-radius: 0 0 10px 10px;*/
-    z-index: 5;
-    transition: all linear 0.1s;
-    opacity: 0;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(to top, #EFC30A, 15%, #EFC30A,transparent);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/*border-radius: 0 0 10px 10px;*/
+	z-index: 5;
+	transition: all linear 0.1s;
+	opacity: 0;
 }
 
 .box_lanche:hover::after {
@@ -316,60 +316,60 @@ span.line {
 
 
 .box_lanche:nth-child(odd) {
-    /*background: linear-gradient(to top, #d08600, #efc30a);*/
+	/*background: linear-gradient(to top, #d08600, #efc30a);*/
 }
 
 .titulo_lanche {
 	font-family: "League Gothic";
-    font-size: 20pt;
-    padding: 10px 0;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    word-spacing: 4px;
-    color: #fff;
-    background: #efc30a;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
-    /*border-radius: 0 0 10px 10px;*/
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 15%;
-    z-index: 8;
+	font-size: 20pt;
+	padding: 10px 0;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	word-spacing: 4px;
+	color: #fff;
+	background: #efc30a;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	/*border-radius: 0 0 10px 10px;*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 15%;
+	z-index: 8;
 }
 
 .img_lanche {
-    max-width: 100%;
-    /*max-height: 180px;*/
-    display: inline-block;
-    z-index: 16;
-    height: 75%;
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    transform: translateX(-50%);
+	max-width: 100%;
+	/*max-height: 180px;*/
+	display: inline-block;
+	z-index: 16;
+	height: 75%;
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translateX(-50%);
 }
 
 .ingredientes_lanche {
 	color: #444;
-    text-align: justify;
-    font-family: sans-serif;
-    background-color: #ffda3e;
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: 16;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
-    font-size: 13pt;
-    padding: 15px;
-    padding-top: 25px;
-    -webkit-transition: all linear 0.3s;
-       -moz-transition: all linear 0.3s;
-        -ms-transition: all linear 0.3s;
-         -o-transition: all linear 0.3s;
-            transition: all linear 0.3s;
+	text-align: justify;
+	font-family: sans-serif;
+	background-color: #ffda3e;
+	position: absolute;
+	top: -100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	z-index: 16;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+	font-size: 13pt;
+	padding: 15px;
+	padding-top: 25px;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+	transition: all linear 0.3s;
 }
 
 .ingredientes_lanche.active {
@@ -490,14 +490,14 @@ span.line {
 
 .section_p {
 	color: #fff;
-    font-family: Merriweather;
-    font-weight: normal;
-    line-height: 150%;
-    text-align: justify;
-    padding: 0 30px;
-    font-size: 12pt;
-    text-indent: 40px;
-    margin-bottom: 10px;
+	font-family: Merriweather;
+	font-weight: normal;
+	line-height: 150%;
+	text-align: justify;
+	padding: 0 30px;
+	font-size: 12pt;
+	text-indent: 40px;
+	margin-bottom: 10px;
 }
 
 .section_p i, .section_p b {
@@ -510,34 +510,34 @@ span.line {
 
 .section_img {
 	text-align: center;
-    padding: 10px 0;
+	padding: 10px 0;
 }
 
 .section_img img {
 	height: 80px;
-    display: inline-block;
+	display: inline-block;
 }
 
-.secao_sobrenos {
-	padding-bottom: 40px;
+#secao_sobrenos {
+	padding-bottom: 60px;
 }
 
 .btn, .btn-large, .btn-small {
 	border-radius: 0;
-    font-family: League Gothic;
-    text-transform: uppercase;
-    font-size: 16pt;
-    letter-spacing: 1px;
-    padding: 0 20px;
-    border: 1px solid #efc30a;
-    color: #efc30a;
-    background-color: transparent;
-    margin-right: 5px;
+	font-family: League Gothic;
+	text-transform: uppercase;
+	font-size: 16pt;
+	letter-spacing: 1px;
+	padding: 0 20px;
+	border: 1px solid #efc30a;
+	color: #efc30a;
+	background-color: transparent;
+	margin-right: 5px;
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-    background-color: #EFC30A;
-    color: #fff;
+	background-color: #EFC30A;
+	color: #fff;
 }
 
 .input-field > label {
@@ -593,7 +593,8 @@ input:not([type])
 		transform: none;
 		width: 100vw;
 		height: auto;
-		background-color: #efefef;
+		background-color: rgba(0,0,0,.6);
+		border-bottom: 3px solid #efc30a;
 		z-index: 998;
 		box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
 		-webkit-transition: all cubic-bezier(0.68, -0.55, 0.49, 1.49) 0.4s;
@@ -608,28 +609,28 @@ input:not([type])
 	}
 
 	#menu_mob > .item_menu_mob {
-		color: #222;
-		font-family: BNT;
-		font-size: 18pt;
+		color: #efc30a;
+		font-family: League Gothic;
+		font-size: 21pt;
 		display: block;
 		text-align: right;
-		background: linear-gradient(to top, #dedede, #efefef);
+		text-transform: uppercase;
 	}
 
 	#menu_mob > .item_menu_mob > a {
-		color: #222;
+		color: #efc30a;
 		display: block;
 		line-height: 57px;
-		border-right: 3px solid transparent;
+		border-right: 5px solid transparent;
 		border-bottom: 0px solid transparent;
 		padding: 0 40px;
 		text-align: right;
 	}
 
 	#menu_mob > .item_menu_mob:hover > a {
-		color: #efc30a;
-		border-right: 3px solid #efc30a;
-		background: #f7f7f7;
+		color: #fff;
+		border-right: 5px solid #efc30a;
+		background: linear-gradient(to left, #efc30a, transparent);
 	}
 
 	.section_header {
@@ -674,5 +675,28 @@ input:not([type])
 	.minor_button.hide-on-med-and-up {
 		display: inline-block !important;
 		margin-bottom: 10px;
+	}
+
+	.col_mapa {
+		padding-left: 0.75rem !important;
+		position: relative;
+		transform: none;
+	}
+
+	.section_title_img > img {
+		height: 50px;
+	}
+	
+	.row_title {
+		font-size: 24pt;
+		text-align: center;
+	}
+
+	.row_title::after {
+		display: none;
+	}
+
+	#secao_cardapio::after {
+		background: linear-gradient(to top, rgba(0,0,0,1), 1%,rgba(0,0,0,0),5%, rgba(0,0,0,0));
 	}
 }
