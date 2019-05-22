@@ -264,7 +264,7 @@ span.line {
 }
 
 .row_title {
-	font-family: League Gothic;
+	font-family: "League Gothic";
 	color: #efc30a;
 	text-transform: uppercase;
 	font-size: 27pt;
@@ -524,7 +524,7 @@ span.line {
 
 .btn, .btn-large, .btn-small {
 	border-radius: 0;
-	font-family: League Gothic;
+	font-family: "League Gothic";
 	text-transform: uppercase;
 	font-size: 16pt;
 	letter-spacing: 1px;
@@ -610,7 +610,7 @@ input:not([type])
 
 	#menu_mob > .item_menu_mob {
 		color: #efc30a;
-		font-family: League Gothic;
+		font-family: "League Gothic";
 		font-size: 21pt;
 		display: block;
 		text-align: right;

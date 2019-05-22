@@ -24,9 +24,9 @@ $(document).ready(function () {
 	});
 });
 
-$(window).resize(function() {
-	adjustElements();
-});
+// $(window).resize(function() {
+// 	adjustElements();
+// });
 
 function initScrollto() {
 	$(".scrollto").click(function (e) {
