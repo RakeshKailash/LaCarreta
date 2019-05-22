@@ -15,10 +15,10 @@
 	font-family: "League Gothic";
 	/*src: url('../fonts/LeagueGothic-Regular.ttf');*/
 
-	src: url('leaguegothic-regular-webfont.eot'); /* IE9 Compat Modes */
-  	src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('leaguegothic-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('leaguegothic-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('leaguegothic-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	src: url('../fonts/leaguegothic-regular-webfont.eot'); /* IE9 Compat Modes */
+  	src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/leaguegothic-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/leaguegothic-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/leaguegothic-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
