@@ -7,6 +7,7 @@ html {
 	height: auto;
 	min-height: 100%;
 	padding-top: 60px;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -158,12 +159,24 @@ body {
 }
 /* Fim do Slider da Home */
 
-/*#mapa_google {
+.row_contato {
+	position: relative;
+}
+
+#mapa_google {
 	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 	border:0;
 	width: 100%;
 	height: 300px;
-}*/
+}
+
+.col_mapa {
+	padding-left: 20px !important;
+	position: absolute;
+    top: 50%;
+    right: 0 !important;
+    transform: translateY(-50%);
+}
 
 .section_header {
 	width: 100%;
@@ -216,6 +229,8 @@ body {
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
+	padding-bottom: 20px;
+	position: relative;
 }
 
 span.line {
@@ -230,6 +245,17 @@ span.line {
 .row_lanches {
 	text-align: center;
 	margin-bottom: 40px;
+}
+
+#secao_cardapio::after {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: linear-gradient(to top, rgba(0,0,0,1), 10%,rgba(0,0,0,0),25%, rgba(0,0,0,0));
+    z-index: 0;
 }
 
 .row_header {
@@ -357,7 +383,7 @@ span.line {
 #rodape {
 	width: 100vw;
 	height: 80px;
-	background-color: #222;
+	background: linear-gradient(to bottom, #000, #222);
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -462,6 +488,78 @@ span.line {
 	background-color: #f46161;
 }
 
+.section_p {
+	color: #fff;
+    font-family: Merriweather;
+    font-weight: normal;
+    line-height: 150%;
+    text-align: justify;
+    padding: 0 30px;
+    font-size: 12pt;
+    text-indent: 40px;
+    margin-bottom: 10px;
+}
+
+.section_p i, .section_p b {
+	color: #efc30a;
+}
+
+.section_p b {
+	font-weight: bold;
+}
+
+.section_img {
+	text-align: center;
+    padding: 10px 0;
+}
+
+.section_img img {
+	height: 80px;
+    display: inline-block;
+}
+
+.secao_sobrenos {
+	padding-bottom: 40px;
+}
+
+.btn, .btn-large, .btn-small {
+	border-radius: 0;
+    font-family: League Gothic;
+    text-transform: uppercase;
+    font-size: 16pt;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    border: 1px solid #efc30a;
+    color: #efc30a;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: #EFC30A;
+    color: #fff;
+}
+
+.input-field > label {
+	color: #efc30a;
+}
+
+input:not([type])
+, input[type=text]:not(.browser-default)
+, input[type=password]:not(.browser-default)
+, input[type=email]:not(.browser-default)
+, input[type=url]:not(.browser-default)
+, input[type=time]:not(.browser-default)
+, input[type=date]:not(.browser-default)
+, input[type=datetime]:not(.browser-default)
+, input[type=datetime-local]:not(.browser-default)
+, input[type=tel]:not(.browser-default)
+, input[type=number]:not(.browser-default)
+, input[type=search]:not(.browser-default)
+, textarea.materialize-textarea {
+	border-color: #efc30a;
+	color: #fff;
+}
 @media (min-width: 601px) {
 	.box_lanche {
 		margin: 0 10px !important;

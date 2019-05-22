@@ -4,6 +4,7 @@ $(document).ready(function () {
 	$("body.full_size").css("height", $("html").height()+"px");
 	setPSizes($("#texto_sec1"));
 	adjustElements();	
+	initScrollto();
 	$(".icone_menu_topo").click(function() {
 		$("#menu_mobile_container").toggleClass("opened");
 		$(".overlay").toggleClass("hide");
@@ -21,6 +22,17 @@ $(window).resize(function() {
 	adjustElements();
 });
 
+function initScrollto() {
+	$(".scrollto").click(function (e) {
+		e.preventDefault();
+		var href, top;
+		href = $(this).attr("href");
+		top = $(href).offset().top;
+
+		$(window).scrollTop((top - 60));
+		return true;
+	});
+}
 
 function adjustElements() {
 	var font = 0;
