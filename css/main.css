@@ -24,6 +24,10 @@ body {
 	min-height: calc(100vh - 60px);
 }
 
+#login_errors {
+	color: #efc30a;
+}
+
 #custom_overlay {
 	position: fixed;
 	top: 0;
@@ -340,7 +344,7 @@ span.line {
 
 .img_lanche {
 	max-width: 100%;
-	/*max-height: 180px;*/
+	max-height: 200px;
 	display: inline-block;
 	z-index: 16;
 	height: 75%;
@@ -351,10 +355,10 @@ span.line {
 }
 
 .ingredientes_lanche {
-	color: #444;
+	color: #333;
 	text-align: justify;
 	font-family: sans-serif;
-	background-color: #ffda3e;
+	background: linear-gradient(to top right, #ea8214, 30%, #efc30a);
 	position: absolute;
 	top: -100%;
 	left: 50%;
@@ -365,11 +369,12 @@ span.line {
 	font-size: 13pt;
 	padding: 15px;
 	padding-top: 25px;
-	-webkit-transition: all linear 0.3s;
-	-moz-transition: all linear 0.3s;
-	-ms-transition: all linear 0.3s;
-	-o-transition: all linear 0.3s;
-	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.1s;
+	-moz-transition: all linear 0.1s;
+	-ms-transition: all linear 0.1s;
+	-o-transition: all linear 0.1s;
+	transition: all linear 0.1s;
+	line-height: 120%;
 }
 
 .ingredientes_lanche.active {
@@ -498,6 +503,11 @@ span.line {
 	font-size: 12pt;
 	text-indent: 40px;
 	margin-bottom: 10px;
+}
+
+.section_p.center {
+	text-align: center !important;
+	text-indent: 0;
 }
 
 .section_p i, .section_p b {

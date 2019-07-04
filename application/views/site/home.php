@@ -11,6 +11,7 @@ $warning = isset($_SESSION['warning']) ? $_SESSION['warning'] : null;
 			<p class="section_title_img"><img src="<?=RAIZ?>img/menu.svg"></p>
 		</div>
 		<div id="cardapio_container" class="row no-margin">
+			<p class="section_p center"><b>Clique no lanche para ver os ingredientes</b></p>
 			<div class="row_header">
 				<p class="row_title">Panchos</p>
 			</div>
@@ -18,17 +19,17 @@ $warning = isset($_SESSION['warning']) ? $_SESSION['warning'] : null;
 				<div class="col s12 m4 box_lanche">
 					<p class="titulo_lanche">Pancho Uruguaio</p>
 					<img src="<?=RAIZ?>img/lanches/pancho/pancho_1.png" class="img_lanche">
-					<p class="ingredientes_lanche">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt magna in tempor interdum. Etiam vestibulum fermentum malesuada. Ut semper sit amet tortor sit amet fermentum.</p>
+					<p class="ingredientes_lanche">Salsicha Frankfurter e condimentos</p>
 				</div>
 				<div class="col s12 m4 box_lanche">
 					<p class="titulo_lanche">Pancho + Queijo</p>
 					<img src="<?=RAIZ?>img/lanches/pancho/pancho_2.png" class="img_lanche">
-					<p class="ingredientes_lanche">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt magna in tempor interdum. Etiam vestibulum fermentum malesuada. Ut semper sit amet tortor sit amet fermentum.</p>
+					<p class="ingredientes_lanche">Salsicha Frankfurter, mussarela derretida e condimentos</p>
 				</div>
 				<div class="col s12 m4 box_lanche">
 					<p class="titulo_lanche">Pancho + Queijo + Bacon</p>
 					<img src="<?=RAIZ?>img/lanches/pancho/pancho_3.png" class="img_lanche">
-					<p class="ingredientes_lanche">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt magna in tempor interdum. Etiam vestibulum fermentum malesuada. Ut semper sit amet tortor sit amet fermentum.</p>
+					<p class="ingredientes_lanche">Salsicha Frankfurter, mussarela derretida, bacon e condimentos</p>
 				</div>
 			</div>
 			<div class="row_header">
@@ -38,17 +39,17 @@ $warning = isset($_SESSION['warning']) ? $_SESSION['warning'] : null;
 				<div class="col s12 m4 box_lanche">
 					<p class="titulo_lanche">Chivito La Carreta</p>
 					<img src="<?=RAIZ?>img/lanches/chivito/chivito_1.png" class="img_lanche">
-					<p class="ingredientes_lanche">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt magna in tempor interdum. Etiam vestibulum fermentum malesuada. Ut semper sit amet tortor sit amet fermentum.</p>
+					<p class="ingredientes_lanche">Pão artesanal, filé de entrecot, bacon, ovo cozido, queijo mussarela, provolone, presunto, alface, tomate, palmito e azeitona</p>
 				</div>
 				<div class="col s12 m4 box_lanche">
 					<p class="titulo_lanche">Chivito Costela</p>
 					<img src="<?=RAIZ?>img/lanches/chivito/chivito_2.png" class="img_lanche">
-					<p class="ingredientes_lanche">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt magna in tempor interdum. Etiam vestibulum fermentum malesuada. Ut semper sit amet tortor sit amet fermentum.</p>
+					<p class="ingredientes_lanche">Pão artesanal, hambúrguer de costela 200g, bacon, ovo cozido, queijo mussarela, provolone, presunto, alface, tomate e pimentão assado</p>
 				</div>
 				<div class="col s12 m4 box_lanche">
 					<p class="titulo_lanche">Chivito República</p>
 					<img src="<?=RAIZ?>img/lanches/chivito/chivito_3.png" class="img_lanche">
-					<p class="ingredientes_lanche">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt magna in tempor interdum. Etiam vestibulum fermentum malesuada. Ut semper sit amet tortor sit amet fermentum.</p>
+					<p class="ingredientes_lanche">Pão artesanal, hambúrguer de cordeiro 160g, bacon, ovo cozido, queijo mussarela, provolone, presunto, alface, tomate e pimentão assado.</p>
 				</div>
 			</div>
 			<div class="row_header">
@@ -58,12 +59,12 @@ $warning = isset($_SESSION['warning']) ? $_SESSION['warning'] : null;
 				<div class="col s12 m6 box_lanche">
 					<p class="titulo_lanche">Choripan Cordeiro</p>
 					<img src="<?=RAIZ?>img/lanches/choripan/choripan_1.png" class="img_lanche">
-					<p class="ingredientes_lanche">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt magna in tempor interdum. Etiam vestibulum fermentum malesuada. Ut semper sit amet tortor sit amet fermentum.</p>
+					<p class="ingredientes_lanche">Pão artesanal, alface, tomate, linguiça de cordeiro, queijo mussarela, provolone, pimentão assado e chimichurri</p>
 				</div>
 				<div class="col s12 m6 box_lanche">
 					<p class="titulo_lanche">Choripan Suíno</p>
 					<img src="<?=RAIZ?>img/lanches/choripan/choripan_2.png" class="img_lanche">
-					<p class="ingredientes_lanche">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt magna in tempor interdum. Etiam vestibulum fermentum malesuada. Ut semper sit amet tortor sit amet fermentum.</p>
+					<p class="ingredientes_lanche">Pão artesanal, alface, tomate, linguiça suína, queijo mussarela, provolone, pimentão assado e chimichurri</p>
 				</div>
 			</div>
 		</div>

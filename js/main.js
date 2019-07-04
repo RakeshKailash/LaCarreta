@@ -17,10 +17,27 @@ $(document).ready(function () {
 		}
 	});
 
+	$(".box_lanche").click(function () {
+		if($(this).find(".ingredientes_lanche").hasClass('active')) {
+			$(".ingredientes_lanche").removeClass("active");
+		} else {
+			$(".ingredientes_lanche").removeClass("active");
+			$(this).find(".ingredientes_lanche").addClass("active");
+		}
+	})
+
 	$(".item_menu_mob, #custom_overlay, #logo").click(function () {
 		$("#btn_menu_mobile").removeClass("menu_aberto");
 		$("#menu_mob").removeClass("menu_on");
 		hideOverlay();
+	});
+
+	$(".reset_form").click(function () {
+		$(this).parents("form")[0].reset();
+	});
+
+	$(".submit_form").click(function () {
+		$(this).parents("form")[0].submit();
 	});
 });
 
