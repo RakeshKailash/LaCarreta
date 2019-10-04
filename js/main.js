@@ -5,6 +5,7 @@ $(document).ready(function () {
 	// setPSizes($("#texto_sec1"));
 	// adjustElements();	
 	initScrollto();
+	initMasks();
 
 	$("#btn_menu_mobile").click(function () {
 		$(this).toggleClass("menu_aberto");
@@ -15,6 +16,90 @@ $(document).ready(function () {
 		} else {
 			hideOverlay();
 		}
+	});
+
+	$(".busca_cupom").click(function () {
+		var codigo = $("#codigo_procurar").val();
+
+		if (!codigo || codigo.length < 4) {
+			Swal.fire({
+			title: 'Erro',
+			text: 'Digite um código de cupom válido!',
+			type: 'warning'});
+			$(".form_busca_cupom").find(".cupom").addClass('hide');
+			return false;
+		}
+
+		codigo = codigo.toUpperCase();
+
+		$.post(RAIZ+'sistema/findcoupon/'+codigo, function (result) {
+			result = JSON.parse(result);
+
+			if (result.status == 0) {
+				Swal.fire({
+					title: 'Erro',
+					text: 'Erro ao buscar o cupom!',
+					type: 'error'});
+				$(".form_busca_cupom").find(".cupom").addClass('hide');
+				return false;
+			}
+
+			if (result.cupom == "" || result.cupom.length < 1) {
+				Swal.fire({
+					title: 'Busca',
+					text: 'Nenhum cupom encontrado para o código '+codigo,
+					type: 'info'});
+				$(".form_busca_cupom").find(".cupom").addClass('hide');
+				return false;
+			}
+
+			var el_cupom = $(".form_busca_cupom").find(".cupom");
+			$(el_cupom).find('.nome_cupom').html(result.cupom.nome);
+			$(el_cupom).find('.codigo_cupom').html(result.cupom.codigo);
+			$(el_cupom).find('.usuario_cupom').html('['+result.cupom.id_usuario+'] '+result.cupom.nome_usuario);
+			if (result.cupom.utilizado == 1) {
+				$(el_cupom).find('.status_cupom').html('Utilizado em: '+result.cupom.data_utilizado);
+				$(el_cupom).find('.usar_cupom').attr('data-id', '');
+				$(el_cupom).find('.usar_cupom').addClass('hide');
+				$(el_cupom).addClass('utilizado');
+			} else {
+				$(el_cupom).removeClass('utilizado');
+				$(el_cupom).find('.status_cupom').html('Disponível para uso');
+				$(el_cupom).find('.usar_cupom').attr('data-id', result.cupom.id_cupom);
+				$(el_cupom).find('.usar_cupom').removeClass('hide');
+			}
+
+			$(el_cupom).removeClass('hide');
+			return true;
+		});
+	});
+
+	$(".cupons").on('click', '.usar_cupom', function() {
+		var id_cupom = $(this).data('id');
+
+		if (!id_cupom || id_cupom == "") {
+			Swal.fire({
+				title: 'Erro',
+				text: 'Erro ao utilizar o cupom!',
+				type: 'error'
+			});
+			return false;
+		}
+
+		Swal.fire({
+			title: 'Marcar cupom como usado',
+			text: 'Deseja marcar o cupom como utilizado?',
+			type: 'question',
+			confirmButtonText: 'Sim, marcar',
+			cancelButtonText: 'Cancelar',
+			showCancelButton: true
+		}).then((result) => {
+			if (result.value) {
+				$.post(RAIZ+'sistema/usecoupon/'+id_cupom, function () {
+					return document.location.reload(true);
+				});
+			}
+		});
 	});
 
 	$(".box_lanche").click(function () {
@@ -102,4 +187,12 @@ function showOverlay () {
 
 function hideOverlay () {
 	$("#custom_overlay").fadeOut({duration: "fast"});
+}
+
+function initMasks() {
+	$(".phone_mask").mask("(00)00000-0000");
+	$(".date_mask").mask("00/00/0000");
+	$(".cpf_mask").mask("000.000.000-00");
+	$(".cep_mask").mask("00000-000");
+	$(".money_mask").mask('###.##0,00', {reverse: true});
 }

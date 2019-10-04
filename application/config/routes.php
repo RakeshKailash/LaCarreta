@@ -52,3 +52,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'main';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['sistema'] = "System/Main";
+
+//Sistema
+$route['sistema/login'] = "System/Main/login";
+$route['sistema/logar'] = "System/Main/logar";
+$route['sistema/logout'] = "System/Main/logout";
+$route['sistema/usecoupon/(:num)'] = "System/Main/usecoupon/$1";
+$route['sistema/findcoupon/(:any)'] = "System/Main/findcoupon/$1";
+
+//Usuários Site
+$route['login'] = "Site_users/Main/login";
+$route['logar'] = "Site_users/Main/logar";
+$route['logout'] = "Site_users/Main/logout";
+$route['cadastro'] = "Site_users/Main/cadastro";
+$route['cadastrar'] = "Site_users/Main/cadastrar";
+$route['minhaconta'] = "Site_users/Main/minhaconta";

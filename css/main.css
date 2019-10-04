@@ -570,6 +570,7 @@ input:not([type])
 	border-color: #efc30a;
 	color: #fff;
 }
+
 @media (min-width: 601px) {
 	.box_lanche {
 		margin: 0 10px !important;
