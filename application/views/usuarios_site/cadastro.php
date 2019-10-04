@@ -29,7 +29,7 @@ $warning = isset($_SESSION['warning']) ? $_SESSION['warning'] : null;
 			<?php endif; ?>
 		</div>
 		<!-- Form de acesso -->
-		<form method="post" action="<?=base_url('/cadastrar');?>">
+		<form method="post" action="<?=RAIZ?>cadastrar">
 			<input type="text" class="custom_text_login" name="nome" placeholder="nome completo">
 			<input type="text" class="custom_text_login" name="email" placeholder="e-mail">
 			<input type="text" class="custom_text_login date_mask" name="data_nascimento" placeholder="data de nascimento">
@@ -56,7 +56,7 @@ $warning = isset($_SESSION['warning']) ? $_SESSION['warning'] : null;
 		<!-- Recupera senha -->
 		<div class="form_section">
 			<p class="form_subtitle">Já tem cadastro? Acesse sua conta, e bem-vindo de volta!</p>
-			<a class="btn_form" href="<?=base_url('/login');?>">Fazer login</a>
+			<a class="btn_form" href="<?=RAIZ?>login');?>">Fazer login</a>
 		</div>
 		<div id="formFooter">
 			<a class="underlineHover" href="#">Esqueceu a senha?</a>
