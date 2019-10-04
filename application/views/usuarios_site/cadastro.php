@@ -56,7 +56,7 @@ $warning = isset($_SESSION['warning']) ? $_SESSION['warning'] : null;
 		<!-- Recupera senha -->
 		<div class="form_section">
 			<p class="form_subtitle">Já tem cadastro? Acesse sua conta, e bem-vindo de volta!</p>
-			<a class="btn_form" href="<?=RAIZ?>login');?>">Fazer login</a>
+			<a class="btn_form" href="<?=RAIZ?>login">Fazer login</a>
 		</div>
 		<div id="formFooter">
 			<a class="underlineHover" href="#">Esqueceu a senha?</a>
