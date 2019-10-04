@@ -3,8 +3,8 @@ $error = isset($_SESSION['error']) ? $_SESSION['error'] : null;
 $success = isset($_SESSION['success']) ? $_SESSION['success'] : null;
 $warning = isset($_SESSION['warning']) ? $_SESSION['warning'] : null;
 ?>
-<div class="col s12" id="banner_home">
-</div>
+<a href="<?=RAIZ?>cadastro" class="col s12" id="banner_home">
+</a>
 <section id="secao_cardapio">
 	<div class="container">
 		<div class="section_header">

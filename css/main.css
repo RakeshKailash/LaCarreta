@@ -152,15 +152,17 @@ body {
 
 /* Slider da Home */
 #banner_home {
+	display: block;
 	height: calc(100vw * 0.41);
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	background-image: url(../img/banner_home_2.png);
+	background-image: url(../img/banner_home_2.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
 /* Fim do Slider da Home */
 
 .row_contato {
