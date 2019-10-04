@@ -30,7 +30,9 @@
 					<ul id="menu_desk" class="hide-on-med-and-down">
 						<li class="item_menu_desk"><a class="scrollto" href="#secao_cardapio">Cardápio</a></li><!-- 
 						 --><li class="item_menu_desk"><a class="scrollto" href="#secao_sobrenos">Sobre nós</a></li><!-- 
-						--><li class="item_menu_desk"><a class="scrollto" href="#secao_contato">Contato</a></li>
+						--><li class="item_menu_desk"><a class="scrollto" href="#secao_contato">Contato</a></li><!-- 
+						--><li class="item_menu_desk"><a href="<?=RAIZ?>cadastro">Cadastre-se</a></li><!-- 
+						--><li class="item_menu_desk"><a href="<?=RAIZ?>login">Acesse</a></li>
 					</ul>
 
 				</div>
@@ -39,6 +41,8 @@
 	</header>
 	<ul id="menu_mob" class="hide-on-large-only">
 		<li class="item_menu_mob"><a class="scrollto" href="#secao_cardapio">Cardápio</a></li><!-- 
-		 --><li class="item_menu_mob"><a class="scrollto" href="#secao_sobrenos">Sobre nós</a></li><!-- 
-		--><li class="item_menu_mob"><a class="scrollto" href="#secao_contato">Contato</a></li>
+		--><li class="item_menu_mob"><a class="scrollto" href="#secao_sobrenos">Sobre nós</a></li><!-- 
+		--><li class="item_menu_mob"><a class="scrollto" href="#secao_contato">Contato</a></li><!-- 
+		--><li class="item_menu_mob"><a href="<?=RAIZ?>cadastro">Cadastre-se</a></li><!-- 
+		--><li class="item_menu_mob"><a href="<?=RAIZ?>login">Acesse</a></li>
 	</ul>
