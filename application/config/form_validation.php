@@ -14,7 +14,7 @@ $config=array(
 		array(
 			'field' => 'email',
 			'label' => 'e-mail',
-			'rules' => 'required|valid_email|is_unique[usuarios_site.email]',
+			'rules' => 'required|is_unique[usuarios_site.email]',
 			'errors'=> array('is_unique'=>'E-mail já cadastrado')
 		),
 		array(

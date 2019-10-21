@@ -571,40 +571,53 @@ body {
 }
 
 .cupons .cupom {
-    padding: 20px;
-    border: 1px solid #efefef;
-    border-radius: 10px;
+    padding: 0;
     display: inline-block;
-    border-left: 10px solid #efefef;
-    vertical-align: top;
-    margin-right: 15px;
 }
 
-.cupons .cupom .nome_cupom {
+.cupons .cupom .cupom_inside {
+    padding: 20px;
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
+    display: inline-block;
+    border-left: 10px solid #c5c5c5;
+    vertical-align: top;
+    margin-right: 15px;
+    height: 220px;
+    width: 90%;
+    margin: 10px 5%;
+    position: relative;
+}
+
+.cupons .cupom.cupom_user .cupom_inside {
+    height: 180px;
+}
+
+.cupons .cupom .cupom_inside .nome_cupom {
     font-size: 14pt;
     font-family: Montserrat;
     font-weight: 500;
 }
 
-.cupons .cupom .codigo_cupom {
+.cupons .cupom .cupom_inside .codigo_cupom {
     font-family: sans-serif;
     font-size: 20pt;
     font-weight: bold;
     padding: 10px;
 }
 
-.cupons .cupom .status_cupom {
+.cupons .cupom .cupom_inside .status_cupom {
     font-size: 12pt;
     font-family: Montserrat;
     font-weight: 500;
     padding-top: 5px;
 }
 
-.cupons .cupom.utilizado .status_cupom {
+.cupons .cupom .cupom_inside.utilizado .status_cupom {
     color: #ff7878;
 }
 
-.cupons .cupom .usuario_cupom {
+.cupons .cupom .cupom_inside .usuario_cupom {
     font-size: 12pt;
     padding-bottom: 5px;
     font-family: sans-serif;
@@ -617,11 +630,14 @@ body {
     margin-bottom: 10px;
 }
 
-.cupons .cupom .usar_cupom {
+.cupons .cupom .cupom_inside .usar_cupom {
     margin-top: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
-.cupons .cupom.utilizado {
+.cupons .cupom.utilizado .cupom_inside {
     border-left: 10px solid #ff7878;
     color: #bbb;
 }

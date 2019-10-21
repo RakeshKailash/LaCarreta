@@ -11,6 +11,6 @@ class Test extends CI_Controller {
 	}
 
 	function index() {
-		echo password_hash("lacarreta2019", PASSWORD_BCRYPT);
+		
 	}
 }

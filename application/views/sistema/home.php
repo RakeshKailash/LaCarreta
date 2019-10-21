@@ -10,7 +10,7 @@
 			<a href="javascript:void(0)" class="busca_cupom btn_sistema">Buscar</a>
 		</div>
 	</div>
-	<div class="cupons">
+	<div class="cupons row">
 		<div class="cupom hide">
 			<p class="nome_cupom"></p>
 			<p class="codigo_cupom"></p>
@@ -23,20 +23,22 @@
 
 <?php if (count($cupons) > 0): ?>
 	<p>Estes são os últimos cupons gerados</p>
-<?php else: ?>
-	<p>Atualmente, não existem cupons gerados.</p>
-<?php endif ?>
+	<?php else: ?>
+		<p>Atualmente, não existem cupons gerados.</p>
+	<?php endif ?>
 
-<div class="cupons">
-	<?php foreach ($cupons as $cupom): ?>
-		<div class="cupom <?=$cupom->utilizado ? 'utilizado' : ''?>">
-			<p class="nome_cupom"><?=$cupom->nome?></p>
-			<p class="codigo_cupom"><?=$cupom->codigo?></p>
-			<p class="usuario_cupom"><?='['.$cupom->id_usuario.'] '.$cupom->nome_usuario?></p>
-			<p class="status_cupom"><?=$cupom->utilizado ? 'Utilizado em: '.$this->parserlib->formatDatetime($cupom->data_utilizado) : 'Disponível para uso'?></p>
-			<?php if (!$cupom->utilizado): ?>
-				<a href="javascript:void(0)" class="usar_cupom btn_sistema" data-id="<?=$cupom->id_cupom?>">Marcar como usado</a>
-			<?php endif ?>
-		</div>
-	<?php endforeach ?>
-</div>
+	<div class="cupons row">
+		<?php foreach ($cupons as $cupom): ?>
+			<div class="cupom col s4 <?=$cupom->utilizado ? 'utilizado' : ''?>">
+				<div class="cupom_inside">
+					<p class="nome_cupom"><?=$cupom->nome?></p>
+					<p class="codigo_cupom"><?=$cupom->codigo?></p>
+					<p class="usuario_cupom"><?='['.$cupom->id_usuario.'] '.$cupom->nome_usuario?></p>
+					<p class="status_cupom"><?=$cupom->utilizado ? 'Utilizado em: '.$this->parserlib->formatDatetime($cupom->data_utilizado) : 'Disponível para uso'?></p>
+					<?php if (!$cupom->utilizado): ?>
+						<a href="javascript:void(0)" class="usar_cupom btn_sistema" data-id="<?=$cupom->id_cupom?>">Marcar como usado</a>
+					<?php endif ?>
+				</div>
+			</div>
+		<?php endforeach ?>
+	</div>
